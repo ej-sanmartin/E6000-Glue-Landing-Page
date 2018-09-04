@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #4d4d4d;
+  font-family: Futura, sans-serif;
+}
+
+header {
+  background: #fee;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#header-img {
+  float: left;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  max-height: 100px;
+  max-width: 150px;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 4em;
+  padding-top: 2em;
+  position: relative;
+}
+
+ul li a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ddd;
+}
+
+/* Mobile devices */
+@media only screen and (max-width : 320px) {
+  .container {
+    width: 100%; 
+  }
+}
+
+/* Laptop screens */
+@media only screen and (min-width : 321px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.container {
+  margin: auto;
+  background: #eee;
+}
+
+.landing {
+  padding-top: 14em;
+  padding-bottom: 12em;
+  text-align: center;
+  background: url("http://www.woodworkinginamerica.com/images/slideshow/homebg2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  color: white;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.signup {
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+
+#form {
+  text-align: center;
+  background: white;
+  width: 40%;
+  margin: auto;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+  box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+}
+
+#email {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#submit {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+}
+
+input[type="submit"] {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  padding: 1em;
+  background: #fee;
+  border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+  background: white;
+}
+
+input[type="submit"]:active {
+  background: #ddd;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.info {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.info-bullet {
+  position: relative;
+  padding-left: 16px;
+}
+
+.info-bullet::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  transform: rotate(45deg);
+  background: red;
+  text-align:right;
+  padding-right: 6px;
+  left: -1em;
+}
+
+#video {
+  display: block;
+  margin: auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.pricing-layouts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+  padding-top: 4em;
+  padding-bottom: 6em;
+}
+
+.price-cards {
+  background: white;
+  padding: 1em 2em;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+  box-shadow: 1px 1px 6px 0px rgba(221,221,221,1);
+}
+
+.price-cards h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.price {
+  text-align: center;
+}
+
+button {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  padding: 1em;
+  background: #fee;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: white;
+}
+
+button:active {
+  background: #ddd;
+}
+
+button:focus {
+  outline: none;
+}
+
+footer {
+  background: #fee;
+  width: 96.75%;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: grey;
+}
+
+footer a:active {
+  top: 0.5em;
+  color: white;
+}
